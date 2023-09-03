@@ -1,0 +1,13 @@
+{
+  "extends": "@backstage/cli/config/tsconfig.json",
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "outDir": "dist-types",
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": false,
+    "rootDir": "."
+  }
+}
