@@ -1,6 +1,6 @@
 import React from 'react';
 import { createDevApp } from '@backstage/dev-utils';
-import { kubernetesCrdEditorPlugin, KubernetesCrdEditorPage } from '../src';
+import { KubernetesCrdEditorPage, kubernetesCrdEditorPlugin } from '../src';
 
 createDevApp()
   .registerPlugin(kubernetesCrdEditorPlugin)

@@ -11,6 +11,7 @@ export interface CrdVersionComponentProperties {
   debug?: boolean;
 }
 
+// eslint-disable-next-line no-console
 const log = (type: string) => console.log.bind(console, type);
 
 export const CrdVersionComponent = ({

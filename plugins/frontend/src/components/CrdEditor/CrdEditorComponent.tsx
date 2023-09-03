@@ -10,9 +10,11 @@ import {
 import { MockCrdRepository } from '../../adapters/MockCrdRepository';
 import { CrdRepository } from '../../domain/repositories/CrdRepository';
 import { CrdComponent } from '../CrdComponent/CrdComponent';
+import { CustomResourceDefinition } from '../../domain/data/CustomResourceDefinition';
 
 export const CrdEditorComponent = () => {
-  const [crd, setCrd] = useState<any | undefined>();
+  const [crd, setCrd] = useState<CustomResourceDefinition | undefined>();
+
   useEffect(() => {
     const crdRepository: CrdRepository = new MockCrdRepository();
     setCrd(crdRepository.load());
