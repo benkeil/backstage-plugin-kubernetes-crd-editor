@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core';
 import { InfoCard } from '@backstage/core-components';
 import React, { useMemo } from 'react';
 import { Code } from '../Code/Code';
-import Form from '@rjsf/material-ui';
+import { Form } from '@rjsf/material-ui';
 import validator from '@rjsf/validator-ajv8';
 
 export interface CrdVersionComponentProperties {
@@ -11,7 +11,6 @@ export interface CrdVersionComponentProperties {
   debug?: boolean;
 }
 
-// eslint-disable-next-line no-console
 const log = (type: string) => console.log.bind(console, type);
 
 export const CrdVersionComponent = ({
@@ -31,7 +30,6 @@ export const CrdVersionComponent = ({
           </Typography>
         )}
         <Form
-          // @ts-ignore IDE bug
           validator={validator}
           schema={schema}
           onChange={log('changed')}

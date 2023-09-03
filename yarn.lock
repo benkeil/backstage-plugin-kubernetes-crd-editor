@@ -2181,25 +2181,6 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@kubernetes-models/generate@^2.3.1":
-  "integrity" "sha512-D4BgxwJzaEQjhXZmsd4W3DpreuSDteL+cUboFhexFywTAGwb+XN/IBzs2jLtKj7jmFqdSJWVLz9DuMsbldyFpg=="
-  "resolved" "https://registry.npmjs.org/@kubernetes-models/generate/-/generate-2.3.1.tgz"
-  "version" "2.3.1"
-  dependencies:
-    "@kubernetes-models/string-util" "^3.0.1"
-    "ajv" "^8.12.0"
-    "fs-extra" "^10.1.0"
-    "indent-string" "^4.0.0"
-    "lodash" "^4.17.21"
-    "tslib" "^2.4.0"
-
-"@kubernetes-models/string-util@^3.0.1":
-  "integrity" "sha512-rRtgYoGzxLzahYWtpguEp59mWEjmkuVehquUo0ekPbXdMpgmM3sl/1fsIUpsv1L92lgt48VfTkuwgHAtOEqm4Q=="
-  "resolved" "https://registry.npmjs.org/@kubernetes-models/string-util/-/string-util-3.0.1.tgz"
-  "version" "3.0.1"
-  dependencies:
-    "tslib" "^2.4.0"
-
 "@leichtgewicht/ip-codec@^2.0.1":
   "integrity" "sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A=="
   "resolved" "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
@@ -3759,6 +3740,11 @@
   "resolved" "https://registry.npmjs.org/@types/js-levenshtein/-/js-levenshtein-1.1.1.tgz"
   "version" "1.1.1"
 
+"@types/js-yaml@^4.0.5":
+  "integrity" "sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA=="
+  "resolved" "https://registry.npmjs.org/@types/js-yaml/-/js-yaml-4.0.5.tgz"
+  "version" "4.0.5"
+
 "@types/jsdom@^20.0.0":
   "integrity" "sha512-d0r18sZPmMQr1eG35u12FZfhIXNrnsPU/g5wvRKCUf/tOGilKKwYMYGqh33BNR6ba+2gkHw1EUiHoN3mn7E5IQ=="
   "resolved" "https://registry.npmjs.org/@types/jsdom/-/jsdom-20.0.1.tgz"
@@ -4862,7 +4848,6 @@
     "@rjsf/material-ui" "5.6.0"
     "@rjsf/utils" "5.6.0"
     "@rjsf/validator-ajv8" "5.6.0"
-    "ajv" "^8.12.0"
     "js-yaml" "^4.1.0"
     "react-use" "^17.2.4"
 
@@ -7663,7 +7648,7 @@
   "resolved" "https://registry.npmjs.org/fs-constants/-/fs-constants-1.0.0.tgz"
   "version" "1.0.0"
 
-"fs-extra@^10.0.0", "fs-extra@^10.1.0", "fs-extra@10.1.0":
+"fs-extra@^10.0.0", "fs-extra@10.1.0":
   "integrity" "sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ=="
   "resolved" "https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz"
   "version" "10.1.0"
@@ -15900,6 +15885,11 @@
   "version" "1.10.2"
 
 "yaml@^2.0.0":
+  "integrity" "sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg=="
+  "resolved" "https://registry.npmjs.org/yaml/-/yaml-2.3.2.tgz"
+  "version" "2.3.2"
+
+"yaml@^2.3.2":
   "integrity" "sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg=="
   "resolved" "https://registry.npmjs.org/yaml/-/yaml-2.3.2.tgz"
   "version" "2.3.2"

@@ -87,7 +87,9 @@ export class MockCrdRepository implements CrdRepository {
   load(): CustomResourceDefinition {
     const crd = load(data) as CustomResourceDefinition;
     crd.spec.versions?.forEach(version => {
+      // we don't need the status here
       delete version.schema!.openAPIV3Schema?.properties?.status;
+      // in our case, open api v3 schema is identical with json schema
     });
     return crd;
   }

@@ -62,7 +62,9 @@ export const CrdComponent = ({ crd }: CrdComponentProperties) => {
             >
               <option aria-label="None" value="" />
               {crd.spec.versions?.map(ver => (
-                <option value={ver.name}>{ver.name}</option>
+                <option key={ver.name} value={ver.name}>
+                  {ver.name}
+                </option>
               ))}
             </Select>
           </FormControl>
@@ -79,9 +81,7 @@ export const CrdComponent = ({ crd }: CrdComponentProperties) => {
             <Typography>Manifest as JSON</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant="body2">
-              <Code data={crd} />
-            </Typography>
+            <Code data={crd} />
           </AccordionDetails>
         </Accordion>
       </Grid>
