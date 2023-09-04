@@ -16,7 +16,7 @@ export const KubernetesCrdEditorPage = kubernetesCrdEditorPlugin.provide(
   createRoutableExtension({
     name: 'KubernetesCrdEditorPage',
     component: () =>
-      import('./components/CrdEditor').then(m => m.CrdEditorComponent),
+      import('./components/CrdEditorComponent').then(m => m.CrdEditorComponent),
     mountPoint: rootRouteRef,
   }),
 );

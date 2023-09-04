@@ -16,7 +16,7 @@ import {
 } from '@material-ui/core';
 import { InfoCard } from '@backstage/core-components';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Code } from '../Code/Code';
+import { Code } from '../CodeComponent/Code';
 import { CrdVersionComponent } from '../CrdVersionComponent/CrdVersionComponent';
 
 export interface CrdComponentProperties {
@@ -41,7 +41,7 @@ export const CrdComponent = ({ crd }: CrdComponentProperties) => {
   }, [crd, selectedVersion]);
 
   return (
-    <Grid container spacing={3} direction="column">
+    <>
       <Grid item>
         <InfoCard
           title={`${crd.spec.names.kind}.${crd.spec.group}`}
@@ -85,6 +85,6 @@ export const CrdComponent = ({ crd }: CrdComponentProperties) => {
           </AccordionDetails>
         </Accordion>
       </Grid>
-    </Grid>
+    </>
   );
 };

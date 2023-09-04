@@ -1,8 +1,8 @@
 import { CustomResourceDefinitionVersion } from '../../domain/data/CustomResourceDefinition';
 import { Grid, Typography } from '@material-ui/core';
 import { InfoCard } from '@backstage/core-components';
-import React, { useMemo } from 'react';
-import { Code } from '../Code/Code';
+import React from 'react';
+import { Code } from '../CodeComponent/Code';
 import { Form } from '@rjsf/material-ui';
 import validator from '@rjsf/validator-ajv8';
 
@@ -17,9 +17,7 @@ export const CrdVersionComponent = ({
   version,
   debug,
 }: CrdVersionComponentProperties) => {
-  const schema = useMemo(() => {
-    return version.schema!.openAPIV3Schema;
-  }, [version.schema]);
+  const schema = version.schema!.openAPIV3Schema;
 
   return (
     <Grid item>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   Content,
   ContentHeader,
@@ -7,19 +7,10 @@ import {
   Page,
   SupportButton,
 } from '@backstage/core-components';
-import { MockCrdRepository } from '../../adapters/MockCrdRepository';
-import { CrdRepository } from '../../domain/repositories/CrdRepository';
-import { CrdComponent } from '../CrdComponent/CrdComponent';
-import { CustomResourceDefinition } from '../../domain/data/CustomResourceDefinition';
+import { CrdSelectorComponent } from '../CrdSelectorComponent/CrdSelectorComponent';
+import { Grid } from '@material-ui/core';
 
 export const CrdEditorComponent = () => {
-  const [crd, setCrd] = useState<CustomResourceDefinition | undefined>();
-
-  useEffect(() => {
-    const crdRepository: CrdRepository = new MockCrdRepository();
-    setCrd(crdRepository.load());
-  }, []);
-
   return (
     <Page themeId="tool">
       <Header
@@ -33,7 +24,9 @@ export const CrdEditorComponent = () => {
         <ContentHeader title="CRD Editor">
           <SupportButton>A description of your plugin goes here.</SupportButton>
         </ContentHeader>
-        {crd && <CrdComponent crd={crd} />}
+        <Grid container spacing={3} direction="column">
+          <CrdSelectorComponent />
+        </Grid>
       </Content>
     </Page>
   );
